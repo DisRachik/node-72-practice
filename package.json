@@ -1,24 +1,39 @@
 {
-  "name": "72",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon backend/server.js",
-    "client": "npm start --prefix frontend"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "bcrypt": "^5.1.0",
-    "colors": "^1.4.0",
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2",
-    "express-async-handler": "^1.2.0",
-    "jsonwebtoken": "^9.0.1",
-    "mongoose": "^7.4.0",
-    "nodemon": "^3.0.1"
-  }
+	"name": "72",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "nodemon backend/server.js",
+		"client": "npm start --prefix frontend",
+		"wp": "webpack --mode=development",
+		"wp:prod": "webpack --mode=production"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"bcrypt": "^5.1.0",
+		"colors": "^1.4.0",
+		"dotenv": "^16.3.1",
+		"express": "^4.18.2",
+		"express-async-handler": "^1.2.0",
+		"express-handlebars": "^7.1.2",
+		"jsonwebtoken": "^9.0.1",
+		"mongoose": "^7.4.0",
+		"nodemailer": "^6.9.4",
+		"nodemon": "^3.0.1",
+		"webpack-cli": "^5.1.4"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.22.10",
+		"@babel/preset-env": "^7.22.10",
+		"babel-loader": "^9.1.3",
+		"css-loader": "^6.8.1",
+		"mini-css-extract-plugin": "^2.7.6",
+		"sass": "^1.66.1",
+		"sass-loader": "^13.3.2",
+		"webpack": "^5.88.2"
+	}
 }
